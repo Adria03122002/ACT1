@@ -1,0 +1,9 @@
+<div class="card-columns mt-4" *ngIf="eventos && eventos.length > 0">
+  <div class="card" *ngFor="let event of eventos">
+    <div class="card-body" >
+          <h4 class="card-title">{{event.title}}</h4>
+          <p class="card-text">{{event.description}}</p>
+        <div class="card-footer text-muted"> {{event.date}}
+    <span class="float-right">{{event.price}}€</span>
+  </div>
+</div>
